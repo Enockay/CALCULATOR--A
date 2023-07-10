@@ -1,0 +1,92 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #1f2937;
+    display:flex;
+    align-content: center; /* to put that content at the centre*/
+    justify-content: center;
+    
+}
+
+/*The main container caring the  calculator*/
+.container{
+    display:block;
+    justify-content: center;
+    margin: 20px;
+    width:400px;
+    height:600px;
+    border: 2px solid green;
+    background-color: chocolate;
+    border-radius: 20px;
+    
+}
+
+/*The screen of the calculator*/
+.display{
+    width : 350px;
+    height :130px;
+    display:block;
+    border-radius: 27px;
+    border: 2px solid green;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: beige;
+}
+
+/*button container now*/
+.button-container{
+    display:block;
+    flex-wrap: wrap;
+    width:350px;
+    height:370px;
+    border : 2px solid blueviolet;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: darkgray;
+    border-radius: 30px;
+    
+}
+button{
+    margin-left:10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: darkslateblue;
+    border-radius: 70px;
+    cursor: pointer;
+    transition:transform 0.2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.1); /* Enlarge the button on hover */
+  }
+
+input{
+    margin-left:10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: darkslateblue;
+    border-radius: 70px;
+    transition:transform 0.2s ease-in-out;
+}
+.result{
+    font-size: 2.3rem;
+    color:goldenrod;
+    display: flex;
+    align-items: self-start;
+    justify-content: flex-start;
+    width:350px;
+    height:50px;
+    border-radius: 30px;
+}
+.calculate{
+    font-size: 2.1rem;
+    width:300px;
+    height:70px;
+    border-radius: 30px;
+    align-items: self-start;
+    justify-content: flex-start;
+}
